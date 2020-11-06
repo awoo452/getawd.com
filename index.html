@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!--Page Title-->
+        <title>AWD - Web App Design & Development</title>
+
+        <!--External CSS files-->
+        <link rel ="stylesheet" href="./css/style.css?v=1.1"> <!--My stylesheet-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> <!--FontAwesome stylesheet-->
+
+        <!--Metadata-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Web Application Design, Development, and Deployment Services"> <!--Page description-->
+        <meta name="keywords" content="HTML, CSS, JavaScript, Web Design, Web Application Design, Web App Development, Web Development, Website Builder, Application, App, Mobile App Developer, App Deployment"> <!--Page keywords-->
+        <meta name="author" content="AWDevelopment"> <!--Page author-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This is page sizing & display-->
+        <meta property="og:image" content="img/awdsm.png"> <!--Put social media image link here-->
+        <meta property="og:image:type" content="image/png"> <!--What file type is displayed?-->
+        
+        <!--Links-->
+        <link rel="icon" href="img/carrot.png"> <!--Browser Tab Image-->    
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> <!--Font type Link-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!--jQuery-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"/> <!--Animate.css-->
+
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+        <nav>
+            <img src="img/logo.png" id="awdLogo">
+            <div class="navContainer">
+
+                <div id="navToggler" onclick="toggleNav()">
+                    <div class="navArrow" id="rightArrow"><i class="fa fa-arrow-left"></i></div>
+                    <div class="navArrow collapsed" id="leftArrow"><i class="fa fa-arrow-right"></i></div>
+                </div>
+                
+                <div class="collapsed" id="navIconContainer">
+                    <a href="#index">
+                        <div class="navIcon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </a>
+                    <a href="#about">
+                        <div class="navIcon">
+                            <i class="fas fa-info"></i>
+                        </div>
+                    </a>
+                    <a href="#portfolio">
+                        <div class="navIcon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                    </a>
+                    <a href="blog/index.html">
+                        <div class="navIcon">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                    </a>
+
+                </div>
+                
+            </div>
+        </nav>
+
+        <!--Main Content-->
+        <main>
+
+            <div class="mainContainer">
+                
+                <div class="headingContainer" id="index">
+                    <div class="headingImgContainer" id="pageTitle">
+                        <img src="img/awdevelopment.png">
+                    </div>
+                    <div class="headingTextContainer">
+                        <h4></h4>
+                    </div>
+                </div>
+
+                <div class="indexCardContainer">
+                    
+                    <div class="card" id="cardOne">
+                        <img src="img/beardindustries.png">
+                        <div class="cardTextBox">
+                            <h4>FRONT END WEB DEVELOPMENT</h4>
+                            <h5>A variety of front end development services with an emphasis on responsive.</h5>
+                        </div>
+                    </div>
+
+                    <div class="card" id="cardTwo">
+                        <img src="img/blackjack.png">
+                        <div class="cardTextBox">
+                            <h4>MOBILE APPLICATION DEVELOPMENT</h4>
+                            <h5>Application development services with a minimalistic focus.</h5>
+                        </div>
+                    </div>
+
+                    <div class="card" id="cardThree">
+                        <img src="img/code.png">
+                        <div class="cardTextBox">
+                            <h4>DEPLOYMENT SERVICES</h4>
+                            <h5>Digital design, development, application deployment, and everything in between.</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="headingContainer" id="about">
+                    <div class="headingImgContainer">
+                        <img src="img/about.png">
+                    </div>
+                    <div class="headingTextContainer">
+                        <h4>My education and experience, my skills, and my plan moving forward.</h4>
+                    </div>
+                </div>
+
+                <div class="aboutInfoContainer">
+
+                    <div class="leftInfoContainer">
+                        <img src="./img/me.png">
+                        <div class="leftInfoTextBox">
+                            <h4>ABOUT ME</h4>
+                            <h5>My name is Aaron, and I am based out of Tacoma, WA. I am a full time student at WGU, where I am in the process of obtaining my Bachelor of Business - IT Management degree. I expect to graduate in the Fall of 2021, and from there I plan to continue my education with WGU and obatin a masters degree. I am supplementing this education with a variety of web based programming certifications such as freeCodeCamp and Codecademy Pro.</h5>
+                            <h5>In my free time I enjoy taking our <a href="./img/dogs.png">dogs</a> to the park with my <a href="./img/us.png">fiance&#769;</a>, working on my house, and wrenching on my old <a href="./img/toyota.png">Toyota Pickup</a>. I also enjoy off-road related <a href="http://www.instagram.com/closeenoughfabrication">fabrication</a>, and recently built a pretty cool <a href="./img/jeep.png">Jeep</a> in my garage with the help of a few friends.</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="rightInfoContainer">
+                    
+                        <div class="rightInfoTextBox">
+                            <h4>WORK HISTORY AND EXPERIENCE</h4>
+                            <h5>Most recently at <a href="http://www.nitehawksweepers.com">Nitehawk Sweepers</a>, I worked as the parts and service manager. While I was in this role the company exceeded budget in total parts sales, and also saw an increase in profit margins. Before that, I managed a team of installers and fabricators, where we produced a record number of units in both 2017 and 2018! As the production manager I also oversaw the transition of the production floor from a "job-shop" to a lean manufacturing model. This resulted in an increase in production efficency, improved inventory tracking, and a much safer work environment for all employees.</h5>
+                            <h5>Between 2013 and 2016, I spent time traveling the world offering groundwater surveys with <a href="http://www.aqualocate.com">AquaLocate</a>. As the lead field technician I was responsible for operation of the GF-6 seismoelectric exploration technology, including two years of data analysis and interpretation. Earlier, I worked for <a href="http://www.centerforce.net">Centerforce</a>, a local non-profit where I helped adults with developmental disabilities gain employment skills and community access.</h5>
+                            <h5>I am an analyst and a problem solver, with an eye for detail and a can do attitude. I am skilled with process and procedure improvements, and I'm a natural leader. I am always looking for a new project to tackle, or a way to simply make something better. I believe the diverse and fulfilling work experience I possess is a testament to my capabilities, and with the proper tools and training I can be successful in most any environment.</h5>
+                        </div>
+                        
+                        <div class="rightInfoList">
+                            <h4>CURRENT SKILLS & ABILITIES</h4>
+                            <ul>
+                                <li>
+                                    <h4>Design Experience</h4>
+                                    <h5>Adobe Creative Cloud</h5>
+                                    <h5>Figma</h5>
+                                </li>
+                                <li>
+                                    <h4>Languages</h4>
+                                    <h5>HTML / CSS</h5>
+                                    <h5>JavaScript</h5>
+                                </li>
+                                <li>
+                                    <h4>Libraries</h4>
+                                    <h5>Bootstrap</h5>
+                                    <h5>Sass</h5>
+                                    <h5>jQuery</h5>
+                                    <h5>React</h5>
+                                </li>
+                                <li>
+                                    <h4>Productivity</h4>
+                                    <h5>MS Office Suite</h5>
+                                    <h5>Google Docs</h5>
+                                    <h5>VSCode</h5>
+                                </li>
+                                <li>
+                                    <h4>Other Experience</h4>
+                                    <h5>macOS Terminal</h5>
+                                    <h5>Git Version Control</h5>
+                                    <h5>Docker</h5>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="headingContainer" id="portfolio">
+                    <div class="headingImgContainer">
+                        <img src="img/portfolio.png">
+                    </div>
+                    <div class="headingTextContainer">
+                        <h4>This is a collection of projects I have created using HTML, CSS, and JavaScript.</h4>
+                        <h4>Check out my github! <a href="http://www.github.com/awoo452"><i class="fab fa-github"></i></a></h4>
+                    </div>
+                </div>
+
+                <div class="portfolioCardContainer">
+
+                    <div class="card">
+                        <a href="http://www.getawd.com/blackjack">
+                            <img src="img/blackjack.png">
+                            <div class="cardTextBox">
+                                <h4>BLACKJACK</h4>
+                                <h5>This is the first project I completed from start to finish using HTML, CSS, & Vanilla JS. I did not rely on tutorials for the content within this application.</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="http://www.beardindustries.com">
+                            <img src="img/beardindustries.png">
+                        </a>
+                        <div class="cardTextBox">
+                            <h4>BEARD INDUSTRIES</h4>
+                            <h5>I built this website while familiarizing myself with basic HTML and CSS. I used bootstrap as a framework to ensure responsive content between devices.</h5>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="http://www.getawd.com/whackamole">
+                            <img src="img/whackamole.png">
+                        </a>
+                        <div class="cardTextBox">
+                            <h4>WHACKAMOLE</h4>
+                            <h5>This is a spin off of the traditional 'Whack-A-Mole' game. As you click on the ingredients your score increases, and you fill a bowl full of delicious digital guacamole.</h5>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="http://www.getawd.com/breakout">
+                            <img src="img/breakout.png">
+                        </a>
+                        <div class="cardTextBox">
+                            <h4>BREAKOUT</h4>
+                            <h5>This Breakout game was built while following the MDN tutorial. It was one of the first projects I created after completing the JavaScript basics section of freeCodeCamp.</h5>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="http://www.getawd.com/gameboy">
+                            <img src="img/gameboy.png">
+                        </a>
+                        <div class="cardTextBox">
+                            <h4>GAMEBOY</h4>
+                            <h5>This is my tribute to an iconic part of my childhood. It is also one of the last projects I created before learning about Sass! Click the power button for a little Nintendo nostalgia!</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </main>
+
+        <!--Footer-->
+        <footer>
+            
+            <!--Navigation-->
+            <div id="footerNavContainer">
+                <a class="footerNavItem" href="#index">Home</a>
+                <a class="footerNavItem" href="#portfolio">Portfolio</a>
+                <a class="footerNavItem" href="#about">About</a>
+                <a class="footerNavItem" href="blog/index.html">Blog</a>
+            </div>
+
+            <!--Contact Info-->
+            <div id="footerContactContainer">
+                <p><i class="fa fa-phone"></i> 253.820.1048</p>
+                <p><i class="fa fa-envelope"></i> awoo452@wgu.edu</p>
+            </div>
+
+            <!--Social Media-->
+            <div id="footerSocialMediaContainer">
+                <a class="footerSocialMediaItem" href="https://github.com/awoo452"><i class="fab fa-github"></i></a>
+                <a class="footerSocialMediaItem" href="https://www.linkedin.com/in/awoo452/"><i class="fab fa-linkedin"></i></a>
+                <a class="footerSocialMediaItem" href="https://twitter.com/awoo452"><i class="fab fa-twitter"></i></a>
+                <a class="footerSocialMediaItem" href="https://www.instagram.com/getawdev/"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!--Copyright-->
+            <div id="footerCopyrightContainer">
+                <p>AW DEVELOPMENT <i class="far fa-copyright"></i> 2020</p>
+            </div>
+    
+        </footer>
+
+        <!--Scripts-->
+        <script src="app.js"></script> <!--My JS-->
+
+    </body>
+</html>

@@ -1,0 +1,83 @@
+.portfolioCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-image: url($cardContainer-background-image);
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: center;
+        
+
+        padding: 1em;
+        min-width: $card-img-width + 1px;
+
+        background-image: url($card-background-image);
+        background-position: center;
+        background-size: 100%;
+        min-height: 100%;
+        min-width: $card-img-width + 10px;
+        background-repeat: repeat;
+        background-color: $card-background-color;
+        
+        h4 {
+            font-family: $main-font-family;
+            color: $text-color;
+            text-align: center;
+
+            margin-block-start: 5px;
+            margin-block-end: 5px;
+        }
+        h5 {
+            font-family: $main-font-family;
+            color: $text-accent-color;
+            text-align: center;
+            
+            margin-block-start: 5px;
+            margin-block-end: 5px;
+        }
+        img {
+            max-width: $card-img-width;
+            max-height: $card-img-height;
+
+            border-bottom: 5px solid $pop-color;
+            border-bottom-left-radius: $border-radius-card-img;
+            border-bottom-right-radius: $border-radius-card-img;
+        }
+
+        .cardTextBox {
+            margin-top: .5em;
+            padding: .5em;
+
+            background-color: $card-text-background-color;
+            
+            background-position: center;
+            background-size: 100%;
+            background-repeat: repeat;
+            height: min-content;
+            width: $card-img-width;
+        }
+    }
+    #cardOne {
+        
+    }
+    #cardTwo {
+
+    }
+    #cardThree {
+        
+    }
+    #cardFour {
+
+    }
+    #cardFive {
+        
+    }
+    #cardSix {
+        
+    }
+}

@@ -1,0 +1,46 @@
+@import './variables';
+@import './nav';
+@import './mixins';
+@import './main';
+@import './functions';
+@import './footer';
+@import './card';
+@import './indexcard';
+@import './aboutinfobox';
+@import './portfoliocard';
+@import './bloginfobox';
+@import './infobox';
+@import './headingbox';
+@import './morecontent';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url($background-image);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+    color: $aw-blue;
+}
+
+a:hover {
+    color: $text-accent-color;
+}

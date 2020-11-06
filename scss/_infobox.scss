@@ -1,0 +1,120 @@
+.infoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    h1, h2, h3, h4, h5, h6, a, p {
+        font-family: $main-font-family;
+        text-align: center;
+
+        margin-block-start: 5px;
+        margin-block-end: 5px;
+    }
+
+    h1, h2, h5 {
+        color: $text-color;
+    }
+    h3, h4, h6 {
+        color: $text-accent-color;
+    }
+
+    .leftInfoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 0;
+
+        padding: 1em;
+        margin: .5em;
+        
+        border: 1px solid $line-color;
+        border-radius: $border-radius-info;
+
+        img {
+            max-width: $info-img-width;
+
+            border: 1px solid $line-color;
+            border-radius: $border-radius-info-img;
+        }
+
+        .leftInfoTextBox {
+
+            max-width: $info-img-width;
+            margin-top: 1em;
+
+            background-color: $info-background-color;
+            background-size: 100%;
+            background-repeat: repeat;
+            
+            border: 1px solid $line-color;
+            border-radius: $border-radius-info;
+        }
+    }
+    .rightInfoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 400px;
+
+        padding: 1em;
+        margin: .5em;
+
+        background-color: $card-background-color;
+
+        border: 1px solid $line-color;
+        border-radius: $border-radius-info;
+        
+        ul {
+            list-style-type: none;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            padding-inline-start: 0;
+            margin-top: 0;
+            
+        }
+            li {
+                flex: 150px;
+                max-width: 60%;
+
+                margin: 1em;
+
+                font-family: $main-font-family;
+                text-align: center;
+                color: $text-color;
+
+                border-bottom: 1px solid $line-color;
+                border-right: 1px solid $line-color;
+                border-radius: $border-radius-info;
+            }
+        .rightInfoTextBox {
+
+            padding: 1em;
+            
+            background-color: $info-text-background-color;
+            background-size: 100%;
+            background-repeat: repeat;
+
+            border: 1px solid $line-color;
+            border-radius: $border-radius-info;
+
+        }
+        .rightInfoList {
+
+            padding: 1em;
+            margin-top: 1em;
+            
+            background-color: $info-text-background-color;
+            background-size: 100%;
+            background-repeat: repeat;
+
+            border: 1px solid $line-color;
+            border-radius: $border-radius-info;
+            
+        }
+    }
+}

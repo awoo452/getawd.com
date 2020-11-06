@@ -1,0 +1,64 @@
+.indexCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100%;
+        flex: 100px;
+
+        padding: 2em;
+        
+        background-color: $card-background-color;
+        
+        h4 {
+
+            margin-block-start: 5px;
+            margin-block-end: 5px;
+
+            font-family: $main-font-family;
+            color: $text-color;
+            text-align: center;
+
+        }
+        h5 {
+
+            margin-block-start: 5px;
+            margin-block-end: 5px;
+
+            font-family: $main-font-family;
+            color: $text-accent-color;
+            text-align: center;
+
+        }
+        img {
+
+            max-width: $card-img-width;
+            max-height: $card-img-height;
+
+            border-bottom: 5px solid $pop-color;
+            border-bottom-left-radius: $border-radius-card-img;
+            border-bottom-right-radius: $border-radius-card-img;
+
+        }
+
+        .cardTextBox {
+
+            height: min-content;
+            width: 100%;
+
+            margin-top: .5em;
+            
+            background-color: $card-text-background-color;
+            background-position: center;
+            background-size: 100%;
+            background-repeat: repeat;
+            
+        }
+    }
+}

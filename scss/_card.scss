@@ -1,0 +1,82 @@
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    border: 2px solid $line-color;
+    border-radius: $border-radius-card;
+
+    .card {
+        display: flex;
+        flex: $card-img-width;
+        flex-wrap: wrap;
+        flex-grow: 0;
+        justify-content: center;
+        justify-items: center;
+
+        padding: 1em;
+        margin: .5em;
+
+        border: 2px solid $line-color;
+        border-radius: $border-radius-card;
+
+        background-color: $card-background-color;
+        
+        h2 {
+            font-family: $accent-font-family;
+            color: $text-color;
+            margin-block-start: 5px;
+            margin-block-end: 5px;
+            text-align: center;
+        }
+        h4 {
+            font-family: $main-font-family;
+            color: $text-color;
+            margin-block-start: 5px;
+            margin-block-end: 5px;
+            text-align: center;
+        }
+        img {
+            border: 1px solid $line-color;
+            
+            border-radius: $border-radius-card-img;
+            max-width: $card-img-width;
+            max-height: $card-img-height;
+        }
+
+        .cardTextBox {
+            margin-top: .5em;
+            padding: .5em;
+
+            background-color: $card-text-background-color;
+            background-position: center;
+            background-size: 100%;
+            background-repeat: repeat;
+
+            border: 1px solid $line-color;
+            border-radius: $border-radius-card-text;
+            
+            max-width: $card-img-width;
+            height: min-content;
+        }
+    }
+    #cardOne {
+        
+    }
+    #cardTwo {
+
+    }
+    #cardThree {
+        
+    }
+    #cardFour {
+
+    }
+    #cardFive {
+        
+    }
+    #cardSix {
+        
+    }
+}
