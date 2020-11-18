@@ -550,15 +550,16 @@ footer #footerCopyrightContainer p {
   -webkit-margin-after: 5px;
           margin-block-end: 5px;
   font-family: "Oswald", sans-serif;
-  text-align: center;
 }
 
 .blogInfoContainer h4 {
   color: #c8c8c8;
+  text-align: center;
 }
 
 .blogInfoContainer h5, .blogInfoContainer li {
   color: #7d7d7d;
+  text-indent: 50px;
 }
 
 .blogInfoContainer ul, .blogInfoContainer li {

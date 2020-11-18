@@ -11,15 +11,17 @@
         margin-block-end: 5px;
 
         font-family: $main-font-family;
-        text-align: center;
+        
  
     }
 
     h4 {
         color: $text-color;
+        text-align: center;
     }
     h5, li {
         color: $text-accent-color;
+        text-indent: 50px;
     }
 
     ul, li {
