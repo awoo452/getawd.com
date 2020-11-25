@@ -431,6 +431,7 @@ footer #footerCopyrightContainer p {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .aboutInfoContainer .rightInfoContainer li {
@@ -456,7 +457,6 @@ footer #footerCopyrightContainer p {
 }
 
 .aboutInfoContainer .rightInfoContainer .rightInfoList {
-  padding: 1em;
   margin-top: 1em;
   background-color: black;
   background-size: 100%;
