@@ -267,9 +267,6 @@ footer #footerCopyrightContainer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   min-height: 100%;
   -webkit-box-flex: 100px;
       -ms-flex: 100px;
@@ -293,6 +290,8 @@ footer #footerCopyrightContainer p {
           margin-block-start: 5px;
   -webkit-margin-after: 5px;
           margin-block-end: 5px;
+  margin: auto;
+  width: 250px;
   font-family: "Oswald", sans-serif;
   color: #7d7d7d;
   text-align: center;
@@ -316,6 +315,18 @@ footer #footerCopyrightContainer p {
   background-position: center;
   background-size: 100%;
   background-repeat: repeat;
+}
+
+@media (max-width: 627px) {
+  .indexCardContainer #cardTwo {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 941px) {
+  .indexCardContainer #cardThree {
+    padding-top: 0;
+  }
 }
 
 .aboutInfoContainer {

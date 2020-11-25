@@ -8,7 +8,7 @@
         flex-direction: column;
         flex-grow: 1;
         align-items: center;
-        justify-content: space-between;
+        
         min-height: 100%;
         flex: 100px;
 
@@ -30,7 +30,8 @@
 
             margin-block-start: 5px;
             margin-block-end: 5px;
-
+            margin: auto;
+            width: 250px;
             font-family: $main-font-family;
             color: $text-accent-color;
             text-align: center;
@@ -59,6 +60,16 @@
             background-size: 100%;
             background-repeat: repeat;
             
+        }
+    }
+    @media (max-width: 627px) {
+        #cardTwo {
+            padding-top: 0;
+        }
+    }
+    @media (max-width: 941px) {
+        #cardThree {
+            padding-top: 0;
         }
     }
 }
