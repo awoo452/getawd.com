@@ -74,6 +74,10 @@ nav .navContainer #navToggler:hover {
   color: #7d7d7d;
 }
 
+.mainContainer .hidden {
+  display: none;
+}
+
 footer {
   display: flex;
   flex-direction: column;
