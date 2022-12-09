@@ -1,36 +1,281 @@
-@import './variables';
-@import './nav';
-@import './mixins';
-@import './main';
-@import './functions';
-@import './footer';
-@import './card';
-@import './aboutinfobox';
-@import './portfoliocard';
-@import './blog';
-@import './heading';
-
-* {
-    box-sizing: border-box;
-}
-
 body {
-    background-image: url($background-image);
     margin: 0;
+    padding: 0;
+    background-color: gray;
+    box-sizing: border-box;
+    font-family: 'Inconsolata';
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+nav {
+    height: 10vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(132, 136, 169);
+    border-bottom: 3px solid rgb(45, 105, 215);
+    #awdLogo {
+        height: 100%;
+        width: auto;
+    }
+    #links {
+        a {
+            text-decoration: none;
+            padding: .5em;
+            color: white;
+            text-shadow: 2px 2px 3px rgb(45, 105, 215);
+        }
+    }
 }
 
-a {
-    text-decoration: none;
-    color: $aw-blue;
-}
+main {
+    #landing {
+        background-color: darkblue;
+        position: absolute;
+        display: none;
+        h1 {
+            color: green;
+            margin: 0;
+        }
+    }
+    #portfolio {
+        background-image: url('/img/backgrounds/space-background.png');
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 50%;
+        border-bottom: 3px solid lime;
+        h1 {
+            margin: 0;
+            padding: 1em;
+            color: white;
+            text-shadow: 3px 3px 3px rgb(45, 105, 215);
+            font-family: 'Oleo Script', cursive;
+        }
+        #cardContainer {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            flex-wrap: wrap;
+            
+            .card {
+                height: 450px;
+                width: 40%;
+                background-color: black;
+                margin-bottom: 1em;
+                text-align: center;
+                box-shadow: 3px 3px 8px rgb(45, 105, 215);
+                border-radius: 10px;
+                a {
+                    margin: 0;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.25em;
+                }
+                iframe {
+                    border: none;
+                    width: 100.1%;
+                    height: 300px;
+                    border-top-left-radius: 7px;
+                    border-top-right-radius: 7px;
+                }
+            }
+            @media screen and (max-width: 785px) {
+                .card {
+                    width: 90%;
+                }   
+            }
+            @media (min-width: 1000px) {
+                .card {
+                    width: 30%;
+                }   
+            }
+        }
+    }
+    #about {
+        background-color: white;
+        background-image: url('/img/backgrounds/hipster-background.png');
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 75%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+        h1 {
+            margin: 0;
+            padding: 1em;
+            width: 90%;
+            text-align: center;
+            color: rgb(0, 118, 192);
+            text-shadow: 4px 4px 4px lime;
+            font-family: 'Oleo Script', cursive;
+        }
+        p {
+            color: rgb(0, 118, 192);
+            text-shadow: 3px 3px 3px lime;
+            height: 100%;
+        
+        }
+        #aboutContainer {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+            padding-left: 1em;
+            padding-right: 1em;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            li {
+                width: 90%;
+                p {
+                    
+                }
+            }
+            img {
+                visibility: hidden; 
+                max-width: 100%;
+            }
+            #image1 {
+                background-image: url('/img/me/1.jpg');
+                background-position: center 75%;
+                background-size: 70%;
+                background-repeat: no-repeat;
+                max-height: 300px;
+            }
+            #p1 {
+            
+            }
+            #image2 {
+                background-image: url('/img/me/2.jpg');
+                background-position: center 25%;
+                background-size: 70%;
+                background-repeat: no-repeat;
+                max-height: 300px;
+            }
+            #p2 {
+                
+            }
+            #image3 {
+                margin-top: .5em;
+                background-image: url('/img/me/3.jpg');
+                background-position: center 60%;
+                background-size: 70%;
+                background-repeat: no-repeat;
+                max-height: 300px;
+            }
+            #p3 {
+                
+            }
+            #image4 {
+                background-image: url('/img/me/4.jpg');
+                background-position: center 25%;
+                background-size: 70%;
+                background-repeat: no-repeat;
+                max-height: 300px;
+            }
+            #p4 {
+                
+            }
+        }
+        @media screen and (min-width: 600px) {
+            #aboutContainer {
+                flex-direction: row;
+                li {
+                    width: 50%;
+                }
+                #image1 {
+                    order: 2;
+                    max-height: 225px;
+                }
+                #p1 {
+                    order: 1;
+                    
+                }
+                #image2 {
+                    order: 3;
+                    max-height: 275px;
+                }
+                #p2 {
+                    order: 4;
+                    text-align: right;
+                    
+                }
+                #image3 {
+                    order: 6;
+                    max-height: 225px;
+                }
+                #p3 {
+                    order: 5;
+                }
+                #image4 {
+                    order: 7;
+                    max-height: 225px;
 
-a:hover {
-    color: $text-accent-color;
+                }
+                #p4 {
+                    order: 8;
+                    text-align: right;
+                }
+            }
+        }
+        @media (min-width: 1200px) {
+            #aboutContainer {
+                flex-direction: row;
+                li {
+                    width: 25%;
+                    p {
+                        text-align: center;
+                        padding: 1em;
+                    }
+                }
+                #image1 {
+                    order: 1;
+                    max-height: 225px;
+                }
+                #p1 {
+                    order: 5;
+                    
+                }
+                #image2 {
+                    order: 2;
+                    max-height: 275px;
+                }
+                #p2 {
+                    order: 6;
+                    text-align: right;
+                }
+                #image3 {
+                    order: 3;
+                    max-height: 225px;
+                }
+                #p3 {
+                    order: 7;
+                }
+                #image4 {
+                    order: 4;
+                    max-height: 225px;
+
+                }
+                #p4 {
+                    order: 8;
+                    text-align: right;
+                }
+            }
+        }
+        #aboutText {
+            width: 90%;
+        }
+    }
+    #hobbies {
+        background-image: url('/img/backgrounds/80s-background.png');
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 40%;
+        height: 50vh;
+    }
 }

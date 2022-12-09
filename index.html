@@ -1,181 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-
         <!--Page Title-->
-        <title>AW Development</title>
-
-        <!--External CSS files-->
-        <link rel ="stylesheet" href="./css/style.css?v=1.1"> <!--My stylesheet-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> <!--FontAwesome stylesheet-->
-
-        <!--Metadata-->
+        <title>AWD</title>
+        <!--My stylesheet-->
+        <link rel ="stylesheet" href="./css/style.css?v=1.1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"><!--  font-family: 'Inconsolata';   -->
+        <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet"><!--    font-family: 'Oleo Script', cursive;    -->
         <meta charset="UTF-8">
-        <meta name="description" content="Web Application Design, Development, and Deployment Services"> <!--Page description-->
-        <meta name="keywords" content="HTML, CSS, JavaScript, Web Design, Web Application Design, Web App Development, Web Development, Website Builder, Application, App, Mobile App Developer, App Deployment"> <!--Page keywords-->
-        <meta name="author" content="AWDevelopment"> <!--Page author-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This is page sizing & display-->
-        <meta property="og:image" content="img/awdsm.png"> <!--Put social media image link here-->
-        <meta property="og:image:type" content="image/png"> <!--What file type is displayed?-->
-        
-        <!--Links-->
+        <meta name="description" content="Web & Application Development">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Web Design, Web Application Design, Web App Development, Web Development, Website Builder, Application, App, Mobile App Developer, App Deployment">
+        <meta name="author" content="getawd.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="img/awdsm.png"> <!--Put social media image link here to be displayed when a link to the site is shared-->
+        <meta property="og:image:type" content="image/png"> <!--What file type is this image? .png, .jpg, etc-->
         <link rel="icon" href="img/carrot.png"> <!--Browser Tab Image-->    
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> <!--Font type Link-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!--jQuery-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"/> <!--Animate.css-->
-
     </head>
 
     <body>
-
-        <!--Navbar-->
         <nav>
-            <img src="img/logo.png" id="awdLogo">
-            <div class="navContainer">
-
-                <div id="navToggler" onclick="toggleNav()">
-                    <div class="navArrow" id="rightArrow"><i class="fa fa-arrow-left"></i></div>
-                    <div class="navArrow collapsed" id="leftArrow"><i class="fa fa-arrow-right"></i></div>
-                </div>
-                
-                <div class="collapsed" id="navIconContainer">
-                    <a href="#index">
-                        <div class="navIcon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                    </a>
-                    <a href="#about">
-                        <div class="navIcon">
-                            <i class="fas fa-info"></i>
-                        </div>
-                    </a>
-                    <a href="#portfolio">
-                        <div class="navIcon">
-                            <i class="fas fa-book-open"></i>
-                        </div>
-                    </a>
-                    <a href="blog/index.html">
-                        <div class="navIcon">
-                            <i class="fas fa-blog"></i>
-                        </div>
-                    </a>
-
-                </div>
-                
-            </div>
+            <img src="img/logo.png" id="awdLogo"><span id="links"><a href="index.html">Home</a><a href="#about">About</a><a href="#portfolio">Projects</a><a href="">Blog</a></span>
         </nav>
-
-        <!--Main Content-->
         <main>
-            <div class="headingContainer" id="portfolio">
-                <div class="headingImgContainer">
-                    <img src="img/portfolio.png">
-                </div>
-                <div class="headingTextContainer">
-                    <h4>This is a collection of projects I have created using HTML, CSS, and JavaScript.</h4>
-                    <h4>Check out my github! <a href="http://www.github.com/awoo452"><i class="fab fa-github"></i></a></h4>
-                </div>
-            </div>
-            <div class="portfolioCardContainer">
+            <section id="landing">
+                <h1>Welcome to AWD. This website was built for the purpose of showcasing some of my favorite web development projects, while helping you learn a little more about me. In the portfolio section you will find a library of projects I have created; these have also incorporated many of my other interests / hobbies. Navigate to the about section just below that for more information about me and my work / professional experience.</h1>
+            </section>
+            <section id="portfolio">
+                <h1 style="text-align: center;">Portfolio / Projects</h1>
+                <div id="cardContainer">
+                    <div class="card">
+                        
+                        <iframe src="https://cefab-offroad.com" scrolling="no"></iframe>
+                        
+                        <a href="https://cefab-offroad.com">This is a website created as a way to showcase one of my other passions in life. It is hosted utilizing the AWS library of services connected to a github repo and showcases many of my ongoing shop projects!</a>
+                            
+                    </div>
+                    <div class="card">
 
-                <div class="card">
-                    <a href="https://www.cefab-offroad.com">
-                        <img src="img/cefab.png">
-                        <div class="cardTextBox">
-                            <h4>CEFAB OFFROAD</h4>
-                            <h5>This is a website I have created as a way to showcase one of my other passions in life- fabrication. It is hosted utilizing the AWS library of services connected to a github repo!</h5>
-                        </div>
-                    </a>
-                </div>
+                        <iframe src="https://blackjack.d393qfhu5aoav7.amplifyapp.com/" scrolling="no"></iframe>
+                        
+                        <a href="https://blackjack.d393qfhu5aoav7.amplifyapp.com/">This project has been a great way to apply many of the concepts covered in the freeCodeCamp / Codecademy JavaScript curriculum, and was a fun way to apply many of these concepts. Good luck!</a>
+                        
+                        
+                    </div>
+                    <div class="card">
 
-                <div class="card">
-                    <a href="https://blackjack.d393qfhu5aoav7.amplifyapp.com/">
-                        <img src="img/blackjack.png">
-                        <div class="cardTextBox">
-                            <h4>BLACKJACK</h4>
-                            <h5>This is the first project I completed from start to finish using HTML, CSS, & Vanilla JS. I did not rely on tutorials for the content within this application.</h5>
-                        </div>
-                    </a>
-                </div>
+                        <iframe style='background-color: white;' src="http://www.beardindustries.com" scrolling="no"></iframe>
+                        
+                        <a href="https://beardindustries.com">This website was built while familiarizing myself with the Bootstrap library, and later CSS media queries. It is now updated to a fully responsive design without the use of Bootstrap at all.</a>
 
-                <div class="card">
-                    <a href="http://www.beardindustries.com">
-                        <img src="img/beardindustries.png">
-                    </a>
-                    <div class="cardTextBox">
-                        <h4>BEARD INDUSTRIES</h4>
-                        <h5>I built this website while familiarizing myself with basic HTML and CSS. It was originally built with bootstrap, but later updated to a fully responsive design using HTML & CSS.</h5>
+                    </div>
+                    <div class="card">
+
+                        <iframe style='background-color: white;' src="https://master.d2inu3bsl9o649.amplifyapp.com/" scrolling="no"></iframe>
+                        
+                        <a href="https://master.d2inu3bsl9o649.amplifyapp.com/">This is my tribute to an iconic part of my childhood. It is also one of the last projects I created before learning about Sass! Click the power button for a little Nintendo nostalgia!</a>
+
                     </div>
                 </div>
-
-                <div class="card">
-                    <a href="https://master.d2inu3bsl9o649.amplifyapp.com/">
-                        <img src="img/gameboy.png">
-                    </a>
-                    <div class="cardTextBox">
-                        <h4>GAMEBOY</h4>
-                        <h5>This is my tribute to an iconic part of my childhood. It is also one of the last projects I created before learning about Sass! Click the power button for a little Nintendo nostalgia!</h5>
-                    </div>
+            </section>
+            <section id="about">
+                <h1>About Me</h1>
+                <ul id="aboutContainer">
+                    <li id="image1">
+                        <img src="/img/me/1.jpg">
+                    </li>
+                    <li id="p1">
+                        <p>My name is Aaron, and I reside in Washington state. I have recently graduated from Western Governors University with a degree in Business Administration - IT Management. I am continuing to supplement this education with a variety of web based programming certifications such as freeCodeCamp and Codecademy, alongside the use of web programming in a real world setting, through the creation of programs, applications, and websites.</p>
+                    </li>
+                    <li id="image2">
+                        <img src="/img/me/2.jpg">
+                    </li>
+                    <li id="p2">
+                        <p>Currently, I'm employed full time with <a href="https://www.moxiworks.com">MoxiWorks</a>, where we provide real estate brokerages with IT related services including websites, email management, CRM, marketing, and other software platforms to assist with business development. Moxi provides these services for many real estate brokerages all around North America, and I am currently working with several of these brokerages to support their agents with initial setup, usage questions, and troubleshooting steps / escalation as necessary. I utilize platforms such as Microsoft Exchange, Atlassian, and Zendesk daily to complete these tasks, and I am absolutely loving every minute of it!</p>
+                    </li>
+                    <li id="image3">
+                        <img src="/img/me/3.jpg">
+                    </li>
+                    <li id="p3">
+                        <p>Recently, as a licensed real estate agent at <a href="https://www.thepnwteam.com/">The PNW Team Keller Williams</a>, I worked as an executive assistant for one of the top producing agents in the area. My responsibilities included managing all aspects of 10 or more real estate transactions from start to finish while ensuring each of our clients had the best experience possible. I also managed our database using Brivity CRM to ensure all pertinent information related to each transaction was documented and updated.</p>
+                    </li>
+                    <li id="image4">
+                        <img src="/img/me/4.jpg">
+                    </li>
+                    <li id="p4">
+                        <p>Before that at <a href="http://www.nitehawksweepers.com">Nitehawk Sweepers</a>, I worked as the parts and service manager. While I was in this role the company exceeded budget in total parts sales, and also saw an increase in profit margins. Before that, I managed a team of installers and fabricators, where we produced a record number of units in both 2017 and 2018! As the production manager I also oversaw the transition of the production floor from a "job-shop" to an assembly line with an emphasis on lean manufacturing principles. This resulted in an increase in production efficency, improved inventory tracking, and a much safer work environment for all employees.</p>
+                    </li>
                 </div>
+            </section>
+            <section style="display: none;" id="hobbies">
 
-            </div>
-
-            <div class="headingContainer" id="about">
-                <div class="headingImgContainer">
-                    <img src="img/about.png">
-                </div>
-            </div>
-
-            <div class="aboutInfoContainer">
-                <img src="./img/headshot.jpeg">
-                <div class="textBox">
-                    <h4>ABOUT ME</h4>
-                    <p>My name is Aaron, and I currently reside in Washington state. I have recently graduated from Western Governors University with a degree in Business Administration - IT Management. I am continuing to supplement this education with a variety of web based programming certifications such as freeCodeCamp and Codecademy, alongside the use of web programming in a real world setting, through the creation of programs, applications, and websites.</p>
-                    <h4 style="margin-top: 1em;">WORK HISTORY AND EXPERIENCE</h4>
-                    <p>Recently, as a licensed real estate agent at <a href="https://www.thepnwteam.com/">The PNW Team Keller Williams</a>, I worked as an executive assistant for one of the top producing agents in the area. My responsibilities included managing all aspects of 10 or more real estate transactions from start to finish while ensuring each of our clients had the best experience possible. I also managed our database using brivity CRM to ensure all pertinent information related to each transaction was documented and updated.</p>
-                    <p>Before that at <a href="http://www.nitehawksweepers.com">Nitehawk Sweepers</a>, I worked as the parts and service manager. While I was in this role the company exceeded budget in total parts sales, and also saw an increase in profit margins. Before that, I managed a team of installers and fabricators, where we produced a record number of units in both 2017 and 2018! As the production manager I also oversaw the transition of the production floor from a "job-shop" to an assembly line with an emphasis on lean manufacturing principles. This resulted in an increase in production efficency, improved inventory tracking, and a much safer work environment for all employees.</p>
-                    <p>Between 2013 and 2016, I spent time traveling the world offering groundwater surveys with <a href="http://www.aqualocate.com">AquaLocate</a>. As the lead field technician I was responsible for operation of the GF-6 seismoelectric exploration technology, including two years of data analysis and interpretation. Earlier, I worked for <a href="http://www.centerforce.net">Centerforce</a>, a local non-profit where I helped adults with developmental disabilities gain employment skills and community access.</p>
-                    <p>I am an analyst and a problem solver, with an eye for detail and a can do attitude. I am skilled with process and procedure improvements, and I'm a natural leader. I am always looking for a new project to tackle, or a way to simply make something better. I believe the diverse and fulfilling work experience I possess is a testament to my capabilities, and with the proper tools and training I can be successful in most any environment.</p>
-                </div>
-            </div>
-
-        </main>
-
-        <!--Footer-->
-        <footer>
+            </section>
             
-            <!--Navigation-->
-            <div id="footerNavContainer">
-                <a class="footerNavItem" href="http://www.getawd.com">Home</a>
-                <a class="footerNavItem" href="#portfolio">Portfolio</a>
-                <a class="footerNavItem" href="#about">About</a>
-                <a class="footerNavItem" href="blog/index.html">Blog</a>
-            </div>
-
-            <!--Contact Info-->
-            <div id="footerContactContainer">
-                <p><i class="fa fa-phone"></i> 253.820.1048</p>
-                <p><i class="fa fa-envelope"></i> awoo452@wgu.edu</p>
-            </div>
-
-            <!--Social Media-->
-            <div id="footerSocialMediaContainer">
-                <a class="footerSocialMediaItem" href="https://github.com/awoo452"><i class="fab fa-github"></i></a>
-                <a class="footerSocialMediaItem" href="https://www.linkedin.com/in/awoo452/"><i class="fab fa-linkedin"></i></a>
-                <a class="footerSocialMediaItem" href="https://twitter.com/awoo452"><i class="fab fa-twitter"></i></a>
-                <a class="footerSocialMediaItem" href="https://www.instagram.com/getawdev/"><i class="fab fa-instagram"></i></a>
-            </div>
-
-            <!--Copyright-->
-            <div id="footerCopyrightContainer">
-                <p>AW DEVELOPMENT <i class="far fa-copyright"></i> 2020</p>
-            </div>
-    
-        </footer>
-
-        <!--Scripts-->
-        <script src="app.js"></script> <!--My JS-->
-
+        </main>
     </body>
 </html>
