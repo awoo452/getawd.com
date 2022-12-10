@@ -152,7 +152,10 @@ main {
                 background-position: center 75%;
                 background-size: 70%;
                 background-repeat: no-repeat;
-                max-height: 300px;
+                max-height: 225px;
+                img {
+                    max-height: 225px;
+                }
             }
             #p1 {
             
@@ -160,9 +163,12 @@ main {
             #image2 {
                 background-image: url('/img/me/2.jpg');
                 background-position: center 25%;
-                background-size: 70%;
+                background-size: 60%;
                 background-repeat: no-repeat;
-                max-height: 300px;
+                max-height: 225px;
+                img {
+                    max-height: 225px;
+                }
             }
             #p2 {
                 
@@ -173,7 +179,10 @@ main {
                 background-position: center 60%;
                 background-size: 70%;
                 background-repeat: no-repeat;
-                max-height: 300px;
+                max-height: 225px;
+                img {
+                    max-height: 225px;
+                }
             }
             #p3 {
                 
@@ -183,7 +192,10 @@ main {
                 background-position: center 25%;
                 background-size: 80%;
                 background-repeat: no-repeat;
-                max-height: 300px;
+                max-height: 225px;
+                img {
+                    max-height: 225px;
+                }
             }
             #p4 {
                 

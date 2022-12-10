@@ -165,15 +165,23 @@ main #about #aboutContainer #image1 {
   background-position: center 75%;
   background-size: 70%;
   background-repeat: no-repeat;
-  max-height: 300px;
+  max-height: 225px;
+}
+
+main #about #aboutContainer #image1 img {
+  max-height: 225px;
 }
 
 main #about #aboutContainer #image2 {
   background-image: url("/img/me/2.jpg");
   background-position: center 25%;
-  background-size: 70%;
+  background-size: 60%;
   background-repeat: no-repeat;
-  max-height: 300px;
+  max-height: 225px;
+}
+
+main #about #aboutContainer #image2 img {
+  max-height: 225px;
 }
 
 main #about #aboutContainer #image3 {
@@ -182,7 +190,11 @@ main #about #aboutContainer #image3 {
   background-position: center 60%;
   background-size: 70%;
   background-repeat: no-repeat;
-  max-height: 300px;
+  max-height: 225px;
+}
+
+main #about #aboutContainer #image3 img {
+  max-height: 225px;
 }
 
 main #about #aboutContainer #image4 {
@@ -190,7 +202,11 @@ main #about #aboutContainer #image4 {
   background-position: center 25%;
   background-size: 80%;
   background-repeat: no-repeat;
-  max-height: 300px;
+  max-height: 225px;
+}
+
+main #about #aboutContainer #image4 img {
+  max-height: 225px;
 }
 
 @media screen and (min-width: 600px) {
