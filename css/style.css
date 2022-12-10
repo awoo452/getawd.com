@@ -151,6 +151,15 @@ main #about #aboutContainer img {
   max-width: 100%;
 }
 
+main #about #aboutContainer #whatIsThisWeirdWebsite {
+  width: 100%;
+}
+
+main #about #aboutContainer #whatIsThisWeirdWebsite p {
+  margin-block-start: 0;
+  padding-top: 0 !important;
+}
+
 main #about #aboutContainer #image1 {
   background-image: url("/img/me/1.jpg");
   background-position: center 75%;
