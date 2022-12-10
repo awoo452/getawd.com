@@ -31,17 +31,6 @@ nav #links a {
   text-shadow: 2px 2px 3px #2d69d7;
 }
 
-main #landing {
-  background-color: darkblue;
-  position: absolute;
-  display: none;
-}
-
-main #landing h1 {
-  color: green;
-  margin: 0;
-}
-
 main #portfolio {
   background-image: url("/img/backgrounds/space-background.png");
   background-position: center;
