@@ -47,6 +47,14 @@ main #portfolio h1 {
   font-family: 'Oleo Script', cursive;
 }
 
+main #portfolio p {
+  margin-block-start: 0;
+  color: white;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 main #portfolio #cardContainer {
   display: flex;
   justify-content: space-evenly;
@@ -118,6 +126,7 @@ main #about p {
   color: #0076c0;
   text-shadow: 3px 3px 3px lime;
   height: 100%;
+  text-align: center;
 }
 
 main #about #aboutContainer {

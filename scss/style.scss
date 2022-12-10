@@ -45,6 +45,13 @@ main {
             text-shadow: 3px 3px 3px rgb(45, 105, 215);
             font-family: 'Oleo Script', cursive;
         }
+        p {
+            margin-block-start: 0;
+            color: white;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
         #cardContainer {
             display: flex;
             justify-content: space-evenly;
@@ -109,7 +116,8 @@ main {
         p {
             color: rgb(0, 118, 192);
             text-shadow: 3px 3px 3px lime;
-            height: 100%;        
+            height: 100%; 
+            text-align: center;       
         }
         #aboutContainer {
             list-style-type: none;
