@@ -1,3 +1,6 @@
+@import './mixins.scss';
+@import './variables.scss';
+
 body {
     margin: 0;
     padding: 0;
@@ -59,7 +62,7 @@ main {
             flex-wrap: wrap;
             
             .card {
-                height: 500px;
+                height: 550px;
                 width: 40%;
                 background-color: black;
                 margin-bottom: 1em;
@@ -70,14 +73,14 @@ main {
                     margin: 0;
                     color: white;
                     text-decoration: none;
-                    font-size: 1.1em;
+                    font-size: 1em;
                     padding-left: 1em;
                     padding-right: 1em;
                 }
                 iframe {
                     border: none;
                     width: 100.1%;
-                    height: 375px;
+                    height: 425px;
                     border-top-left-radius: 7px;
                     border-top-right-radius: 7px;
                 }
@@ -87,10 +90,15 @@ main {
                     width: 90%;
                 }   
             }
-            @media (min-width: 1000px) {
+            @media (min-width: 785px) {
+                .card {
+                    width: 45%;
+                }   
+            }
+            @media (min-width: 1100px) {
                 .card {
                     width: 30%;
-                }   
+                }
             }
         }
     }
