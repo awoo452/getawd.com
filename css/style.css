@@ -301,10 +301,29 @@ main #about #aboutText {
   width: 90%;
 }
 
-main #hobbies {
+main #socialMedia {
   background-image: url("/img/backgrounds/80s-background.png");
   background-position: center;
   background-repeat: repeat;
-  background-size: 40%;
-  height: 50vh;
+  background-size: 30%;
+  opacity: 50%;
+}
+
+main #socialMedia ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+}
+
+main #socialMedia ul li {
+  padding: .5em;
+}
+
+main #socialMedia ul li a {
+  color: white;
+}
+
+main #bullshit {
+  background-color: lime;
 }

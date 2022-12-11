@@ -298,11 +298,29 @@ main {
             width: 90%;
         }
     }
-    #hobbies {
+    #socialMedia {
         background-image: url('/img/backgrounds/80s-background.png');
         background-position: center;
         background-repeat: repeat;
-        background-size: 40%;
-        height: 50vh;
+        background-size: 30%;
+        opacity: 50%;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding-left: 0;
+            
+            display: flex;
+            
+            li {
+                padding: .5em;
+                a {
+                    color: white;
+                    
+                }
+            }
+        }
+    }
+    #bullshit {
+        background-color: lime;
     }
 }
